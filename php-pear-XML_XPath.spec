@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.php
-%define         _class          XML
-%define         _subclass       XPath
+%define		_class		XML
+%define		_subclass	XPath
 %define		_status		devel
 %define		_pearname	%{_class}_%{_subclass}
 
