@@ -1,0 +1,15 @@
+--- php-pear-XML_XPath-1.2.1/XML_XPath-1.2.1/XPath.php~	2003-08-18 06:04:45.000000000 +0200
++++ php-pear-XML_XPath-1.2.1/XML_XPath-1.2.1/XPath.php	2004-12-04 23:22:57.371555088 +0100
+@@ -54,9 +54,9 @@
+ // {{{ includes
+ 
+ require_once 'PEAR.php';
+-require_once 'XPath/common.php';
+-require_once 'XPath/result.php';
+-require_once 'XPath/error.php';
++require_once 'XML/XPath/common.php';
++require_once 'XML/XPath/result.php';
++require_once 'XML/XPath/error.php';
+ 
+ // }}}
+ 
