@@ -3,7 +3,8 @@
 %define         _subclass       XPath
 %define		_status		beta
 %define		_pearname	%{_class}_%{_subclass}
-Summary:	%{_pearname} - provides an XPath/DOM XML manipulation, maneuvering and query interface
+Summary:	%{_pearname} - XPath/DOM XML manipulation, maneuvering and query interface
+Summary(pl):	%{_pearname} - interfejs do obróbki i zapytañ XPath/DOM XML
 Name:		php-pear-%{_pearname}
 Version:	1.2
 Release:	1
@@ -17,13 +18,13 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-The PEAR::XML_XPath class provided an XPath/DOM XML manipulation,
+The PEAR::XML_XPath class provides an XPath/DOM XML manipulation,
 maneuvering and query interface.
 
 The class allows for easy manipulation, maneuvering and querying of a
-domxml tree using both xpath queries and DOM walk functions. It uses
+DOMXML tree using both XPath queries and DOM walk functions. It uses
 an internal pointer for all methods on which the action is performed.
-Results from an dom/xpath query are returned as an XPath_Result
+Results from an DOM/XPath query are returned as an XPath_Result
 object, which contains an internal array of DOM nodes and which
 extends the common DOM class and hence contains all the DOM functions
 from the main object to run on each of the elements in the internal
@@ -33,9 +34,30 @@ Recommendation. You MUST have the domxml extension to use this class.
 The XML_XPath class was inspired by a class maintained by Nigel
 Swinson called phpxpath. The phpxpath class does not rely on PHP
 xmldom functions and is therefore a sibling to this class:
-http://sourceforge.net/projects/phpxpath
+http://sourceforge.net/projects/phpxpath/.
 
 This class has in PEAR status: %{_status}.
+
+%description -l pl
+Klasa PEAR::XML_XPath udostêpnia interfejs do obróbki, manewrowania i
+zapytañ XPath/DOM XML.
+
+Klasa ta pozwala na ³atwe manipulowanie, manewrowanie i odpytywanie
+drzewa DOMXML przy u¿yciu zapytañ XPath i funkcji chodz±cych DOM.
+U¿ywa wewnêtrznego wska¼nika dla wszystkich metod, na których jest
+wykonywana akcja. Wyniki zapytañ DOM/XPath s± zwracane jako obiekt
+XPath_Result, który zawiera wewnêtrzn± tablicê wêz³ów DOM i rozszerza
+ogóln± klasê DOM, przez co zawiera wszystkie funkcje DOM z g³ównego
+obiektu, które mo¿na uruchamiaæ na ka¿dym z elementów wewnêtrznej
+tablicy. Ta klasa próbuje byæ najbli¿ej rekomendacji DOM na ile to
+mo¿liwe. Aby u¿ywaæ tej klasy, trzeba mieæ rozszerzenie domxml.
+
+Klasa XML_XPath by³a inspirowana klas± phpxpath utrzymywan± przez
+Nigela Swinsona. Klasa phpxpath nie polega na funkcjach PHP xmldom,
+dlatego jest siostrzana dla tej klasy:
+http://sourceforge.net/projects/phpxpath/.
+
+Ta klasa ma w PEAR status: %{_status}.
 
 %prep
 %setup -q -c
