@@ -38,7 +38,7 @@ Swinson called phpxpath. The phpxpath class does not rely on PHP
 xmldom functions and is therefore a sibling to this class:
 http://sourceforge.net/projects/phpxpath/.
 
-This class has in PEAR status: %{_status}.
+In PEAR status of this package is: %{_status}.
 
 %description -l pl
 Klasa PEAR::XML_XPath udostêpnia interfejs do obróbki, manewrowania i
