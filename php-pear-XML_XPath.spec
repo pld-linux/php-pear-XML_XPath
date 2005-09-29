@@ -8,14 +8,14 @@ Summary:	%{_pearname} - XPath/DOM XML manipulation, maneuvering and query interf
 Summary(pl):	%{_pearname} - interfejs do obróbki i zapytañ XPath/DOM XML
 Name:		php-pear-%{_pearname}
 Version:	1.2.1
-Release:	3
+Release:	3.1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	916f60741d5db46b190512e1ba72964c
 Patch0:		%{name}-path_fix.patch
 URL:		http://pear.php.net/package/XML_XPath/
-BuildRequires:	rpm-php-pearprov >= 4.0.2-98
+BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-pear
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -63,22 +63,23 @@ http://sourceforge.net/projects/phpxpath/.
 Ta klasa ma w PEAR status: %{_status}.
 
 %prep
-%setup -q -c
-%patch0 -p1
+%pear_package_setup
+cd ./%{php_pear_dir}/%{_class}
+%patch0 -p2
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/{,%{_subclass}}
-
-install %{_pearname}-%{version}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
-install %{_pearname}-%{version}/%{_subclass}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}
+install -d $RPM_BUILD_ROOT%{php_pear_dir}
+%pear_package_install
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc %{_pearname}-%{version}/docs/*
+%doc install.log
+%doc docs/%{_pearname}/docs/*
 %dir %{php_pear_dir}/%{_class}/%{_subclass}
+%{php_pear_dir}/.registry/*.reg
 %{php_pear_dir}/%{_class}/*.php
 %{php_pear_dir}/%{_class}/%{_subclass}/*.php
