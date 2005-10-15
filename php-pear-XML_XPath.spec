@@ -1,18 +1,18 @@
 %include	/usr/lib/rpm/macros.php
 %define		_class		XML
 %define		_subclass	XPath
-%define		_status		devel
+%define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - XPath/DOM XML manipulation, maneuvering and query interface
 Summary(pl):	%{_pearname} - interfejs do obróbki i zapytañ XPath/DOM XML
 Name:		php-pear-%{_pearname}
-Version:	1.2.1
-Release:	4
+Version:	1.2.2
+Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	916f60741d5db46b190512e1ba72964c
+# Source0-md5:	af8c4ca7f4cf3adcd3062bcb1478751d
 Patch0:		%{name}-path_fix.patch
 URL:		http://pear.php.net/package/XML_XPath/
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
