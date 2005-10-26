@@ -7,16 +7,17 @@
 Summary:	%{_pearname} - XPath/DOM XML manipulation, maneuvering and query interface
 Summary(pl):	%{_pearname} - interfejs do obróbki i zapytañ XPath/DOM XML
 Name:		php-pear-%{_pearname}
-Version:	1.2.2
+Version:	1.2.3
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	af8c4ca7f4cf3adcd3062bcb1478751d
+# Source0-md5:	7f3ac45db9e6bc5e549666e39a804c99
 Patch0:		%{name}-path_fix.patch
 URL:		http://pear.php.net/package/XML_XPath/
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-common >= 3:4.2.1
+Requires:	php-common < 3:5.0.0
 Requires:	php-domxml
 Requires:	php-pear
 BuildArch:	noarch
@@ -39,7 +40,7 @@ Recommendation. You MUST have the domxml extension to use this class.
 The XML_XPath class was inspired by a class maintained by Nigel
 Swinson called phpxpath. The phpxpath class does not rely on PHP
 xmldom functions and is therefore a sibling to this class:
-http://sourceforge.net/projects/phpxpath/.
+<http://sourceforge.net/projects/phpxpath/>.
 
 In PEAR status of this package is: %{_status}.
 
@@ -60,7 +61,7 @@ mo¿liwe. Aby u¿ywaæ tej klasy, trzeba mieæ rozszerzenie domxml.
 Klasa XML_XPath by³a inspirowana klas± phpxpath utrzymywan± przez
 Nigela Swinsona. Klasa phpxpath nie polega na funkcjach PHP xmldom,
 dlatego jest siostrzana dla tej klasy:
-http://sourceforge.net/projects/phpxpath/.
+<http://sourceforge.net/projects/phpxpath/>.
 
 Ta klasa ma w PEAR status: %{_status}.
 
