@@ -8,7 +8,7 @@ Summary:	%{_pearname} - XPath/DOM XML manipulation, maneuvering and query interf
 Summary(pl):	%{_pearname} - interfejs do obróbki i zapytañ XPath/DOM XML
 Name:		php-pear-%{_pearname}
 Version:	1.2.3
-Release:	2
+Release:	3
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -18,9 +18,9 @@ URL:		http://pear.php.net/package/XML_XPath/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
-Requires:	php-common >= 3:4.2.1
+Requires:	php(domxml)
 Requires:	php-common < 3:5.0.0
-Requires:	php-domxml
+Requires:	php-common >= 3:4.2.1
 Requires:	php-pear
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
