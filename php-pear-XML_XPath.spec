@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - XPath/DOM XML manipulation, maneuvering and query interface
-Summary(pl.UTF-8):   %{_pearname} - interfejs do obróbki i zapytań XPath/DOM XML
+Summary(pl.UTF-8):	%{_pearname} - interfejs do obróbki i zapytań XPath/DOM XML
 Name:		php-pear-%{_pearname}
 Version:	1.2.3
 Release:	3
