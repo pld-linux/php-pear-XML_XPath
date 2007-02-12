@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - XPath/DOM XML manipulation, maneuvering and query interface
-Summary(pl):	%{_pearname} - interfejs do obróbki i zapytañ XPath/DOM XML
+Summary(pl.UTF-8):   %{_pearname} - interfejs do obrÃ³bki i zapytaÅ„ XPath/DOM XML
 Name:		php-pear-%{_pearname}
 Version:	1.2.3
 Release:	3
@@ -46,21 +46,21 @@ xmldom functions and is therefore a sibling to this class:
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Klasa PEAR::XML_XPath udostêpnia interfejs do obróbki, manewrowania i
-zapytañ XPath/DOM XML.
+%description -l pl.UTF-8
+Klasa PEAR::XML_XPath udostÄ™pnia interfejs do obrÃ³bki, manewrowania i
+zapytaÅ„ XPath/DOM XML.
 
-Klasa ta pozwala na ³atwe manipulowanie, manewrowanie i odpytywanie
-drzewa DOMXML przy u¿yciu zapytañ XPath i funkcji chodz±cych DOM.
-U¿ywa wewnêtrznego wska¼nika dla wszystkich metod, na których jest
-wykonywana akcja. Wyniki zapytañ DOM/XPath s± zwracane jako obiekt
-XPath_Result, który zawiera wewnêtrzn± tablicê wêz³ów DOM i rozszerza
-ogóln± klasê DOM, przez co zawiera wszystkie funkcje DOM z g³ównego
-obiektu, które mo¿na uruchamiaæ na ka¿dym z elementów wewnêtrznej
-tablicy. Ta klasa próbuje byæ najbli¿ej rekomendacji DOM na ile to
-mo¿liwe. Aby u¿ywaæ tej klasy, trzeba mieæ rozszerzenie domxml.
+Klasa ta pozwala na Å‚atwe manipulowanie, manewrowanie i odpytywanie
+drzewa DOMXML przy uÅ¼yciu zapytaÅ„ XPath i funkcji chodzÄ…cych DOM.
+UÅ¼ywa wewnÄ™trznego wskaÅºnika dla wszystkich metod, na ktÃ³rych jest
+wykonywana akcja. Wyniki zapytaÅ„ DOM/XPath sÄ… zwracane jako obiekt
+XPath_Result, ktÃ³ry zawiera wewnÄ™trznÄ… tablicÄ™ wÄ™zÅ‚Ã³w DOM i rozszerza
+ogÃ³lnÄ… klasÄ™ DOM, przez co zawiera wszystkie funkcje DOM z gÅ‚Ã³wnego
+obiektu, ktÃ³re moÅ¼na uruchamiaÄ‡ na kaÅ¼dym z elementÃ³w wewnÄ™trznej
+tablicy. Ta klasa prÃ³buje byÄ‡ najbliÅ¼ej rekomendacji DOM na ile to
+moÅ¼liwe. Aby uÅ¼ywaÄ‡ tej klasy, trzeba mieÄ‡ rozszerzenie domxml.
 
-Klasa XML_XPath by³a inspirowana klas± phpxpath utrzymywan± przez
+Klasa XML_XPath byÅ‚a inspirowana klasÄ… phpxpath utrzymywanÄ… przez
 Nigela Swinsona. Klasa phpxpath nie polega na funkcjach PHP xmldom,
 dlatego jest siostrzana dla tej klasy:
 <http://sourceforge.net/projects/phpxpath/>.
